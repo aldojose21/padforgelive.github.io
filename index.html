@@ -3,51 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Octapad Drum Machine</title>
+    <title>Política de Privacidade - PadForge Live</title>
     <style>
-        :root {
-            --primary: #2ecc71;
-            --dark: #2c3e50;
-            --light: #ecf0f1;
-            --text: #333;
-        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background-color: var(--light);
-            margin: 0;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
+            background-color: #f4f4f9;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
+            background-color: #fff;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1 {
-            color: var(--dark);
-            border-bottom: 2px solid var(--primary);
+            color: #000;
+            border-bottom: 2px solid #ff8a9d;
             padding-bottom: 10px;
         }
         h2 {
-            color: var(--dark);
+            color: #444;
             margin-top: 30px;
         }
-        .highlight-box {
-            background-color: #f0fff4;
-            border-left: 5px solid var(--primary);
-            padding: 20px;
-            margin: 20px 0;
-            font-weight: 500;
+        p, li {
+            font-size: 16px;
+        }
+        ul {
+            padding-left: 20px;
         }
         .footer {
             margin-top: 50px;
-            font-size: 0.9em;
-            color: #7f8c8d;
+            font-size: 14px;
+            color: #777;
             text-align: center;
+        }
+        .highlight {
+            color: #ff8a9d;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -55,27 +51,52 @@
 
 <div class="container">
     <h1>Política de Privacidade</h1>
-    <p>Esta política detalha como o nosso aplicativo estilo <strong>PadForge Live</strong> lida com seus dados.</p>
+    <p><strong>Última atualização:</strong> 15 de Maio de 2024</p>
 
-    <div class="highlight-box">
-        <strong>Compromisso Principal:</strong> Respeitamos sua privacidade criativa. Não coletamos, não armazenamos e não compartilhamos seus dados de áudio ou voz.
-    </div>
+    <p>Esta Política de Privacidade descreve como o aplicativo <span class="highlight">PadForge Live</span> lida com suas informações ao utilizar nossos serviços de performance musical.</p>
 
-    <h2>1. Processamento de Áudio</h2>
-    <p>O acesso ao microfone ou sistema de áudio (se solicitado) serve exclusivamente para as funções do Octapad, como gravação de samples personalizados ou aplicação de efeitos em tempo real. Todo esse processamento ocorre <strong>localmente</strong> no seu dispositivo.</p>
+    <h2>1. Coleta e Uso de Informações</h2>
+    <p>O PadForge Live foi projetado para ser um instrumento musical de alta performance. Para isso, utilizamos ferramentas que nos ajudam a manter a estabilidade do aplicativo:</p>
+    <ul>
+        <li><strong>Firebase Analytics:</strong> Coletamos dados anônimos de uso para entender quais funções são mais utilizadas e melhorar a interface do usuário.</li>
+        <li><strong>Firebase Crashlytics (NDK):</strong> Coletamos relatórios técnicos de falhas, especificamente do motor de áudio nativo (C++), para corrigir bugs e evitar fechamentos inesperados.</li>
+    </ul>
 
-    <h2>2. Armazenamento de Dados</h2>
-    <p>Quaisquer batidas, ritmos ou gravações criadas por você são armazenadas apenas na memória interna do seu próprio dispositivo. Não possuímos servidores para hospedar seus arquivos de áudio.</p>
+    <h2>2. Permissões Requeridas</h2>
+    <p>Para fornecer a funcionalidade completa de um sampler profissional, o aplicativo solicita acesso a:</p>
+    <ul>
+        <li><strong>Arquivos e Mídia:</strong> Necessário para carregar seus próprios arquivos WAV/MP3 nos pads e para salvar suas gravações de performance na pasta de música do dispositivo.</li>
+        <li><strong>Bluetooth e Localização:</strong> Necessário para escanear e conectar controladores MIDI via Bluetooth. <em>Nota: Não coletamos e não armazenamos sua localização geográfica.</em></li>
+    </ul>
 
-    <h2>3. Segurança</h2>
-    <p>Como não coletamos dados pessoais ou arquivos de som através da internet, o risco de vazamento de informações privadas através deste aplicativo é inexistente.</p>
+    <h2>3. Armazenamento e Processamento</h2>
+    <p>Respeitamos a sua propriedade intelectual:</p>
+    <ul>
+        <li>Todos os áudios (samples) carregados no aplicativo permanecem exclusivamente no seu dispositivo.</li>
+        <li>Não fazemos upload de suas gravações ou kits para servidores externos.</li>
+        <li>O processamento de áudio é feito localmente pelo motor <strong>Oboe High-Performance</strong>.</li>
+    </ul>
 
-    <h2>4. Alterações</h2>
-    <p>Esta política pode ser atualizada ocasionalmente, mas o princípio de não coletar áudio pessoal permanecerá o mesmo.</p>
+    <h2>4. Serviços de Terceiros</h2>
+    <p>O aplicativo utiliza serviços de terceiros que podem coletar informações de acordo com suas próprias políticas:</p>
+    <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+        <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
+        <li><a href="https://firebase.google.com/support/privacy/" target="_blank">Firebase Crashlytics</a></li>
+    </ul>
+
+    <h2>5. Segurança</h2>
+    <p>Empregamos as melhores práticas de desenvolvimento Android para garantir que seus dados e configurações de Kit estejam seguros no armazenamento privado do aplicativo.</p>
+
+    <h2>6. Contato</h2>
+    <p>Se você tiver dúvidas sobre esta política, entre em contato com o desenvolvedor:</p>
+    <p>
+        <strong>Desenvolvedor:</strong> Aldo Jose<br>
+        <strong>E-mail:</strong> [SEU-EMAIL-AQUI]
+    </p>
 
     <div class="footer">
-        <p>Última atualização: Maio de 2026</p>
-        <p>Desenvolvido para músicos e entusiastas de batidas.</p>
+        &copy; 2024 PadForge Audio Engine. Todos os direitos reservados.
     </div>
 </div>
 </body>
